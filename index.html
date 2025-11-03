@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+	 <a-sky color="#ECECEC"></a-sky>
+	 <a-camers position="0 1.5 0"></a-camers>
+	 
+	 <!-- Load asset -->
+	 <a-assets>
+	    <a-asset-item id="myModel" src="new tork.glb"></a-asset-item>
+		
+		<!-- Display asset -->
+		<a-entity gltf-model="#myModel"></a-entity>
+	</a-scene>
+  </body>
+</html>
